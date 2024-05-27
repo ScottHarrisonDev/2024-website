@@ -1,0 +1,15 @@
+---
+import type { NavPosition, NavTheme } from '../types/types';
+
+interface Props {
+    position: NavPosition
+}
+
+const { position } = Astro.props;
+---
+
+<nav class="bg-coral text-dark-grey w-full" class:list={[position === 'fixed' ? 'fixed top-0' : '' ]}>
+    <div class="container mx-auto">
+        <slot />
+    <div>
+</nav>

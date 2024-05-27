@@ -1,0 +1,13 @@
+---
+import type { url } from '../types/types';
+
+interface Props {
+    url: url
+}
+
+const { url } = Astro.props;
+---
+
+<a href={url} target="_blank" class="bg-gradient-to-r from-coral to-blue inline-block bg-clip-text text-transparent animated-background hover:text-coral">
+    <slot />
+</a>
