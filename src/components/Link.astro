@@ -1,13 +1,25 @@
 ---
-import type { url } from '../types/types';
+import type { url, linkTheme } from '../types/types';
 
 interface Props {
     url: url
+    theme: linkTheme
 }
 
-const { url } = Astro.props;
+const { url, theme = 'default' } = Astro.props;
+
+const classes = [
+    theme === 'default' ? 'bg-coral text-white hover:text-white' : '',
+    theme === 'green' ? 'bg-green text-white hover:text-black' : '',
+    theme === 'black' ? 'bg-black text-white hover:text-black' : '',
+    theme === 'dark-blue' ? 'bg-dark-blue text-white hover:text-black' : '',
+    theme === 'purple' ? 'bg-purple text-white hover:text-black' : '',
+    theme === 'blue' ? 'bg-blue text-white hover:text-black' : '',
+    theme === 'light-green' ? 'bg-light-green text-white hover:text-black' : '',
+    theme === 'coral' ? 'bg-coral text-white hover:text-black' : '',
+]
 ---
 
-<a href={url} target="_blank" class="bg-gradient-to-r from-coral to-blue inline-block bg-clip-text text-transparent animated-background hover:text-coral">
+<a href={url} target="_blank" class="font-roboto-slab inline-block px-3 py-1 my-1 rounded" class:list={classes}>
     <slot />
 </a>

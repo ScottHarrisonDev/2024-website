@@ -6,8 +6,13 @@ export default {
 		  'dark-grey': '#383838',
 		  'white': '#f5f5f5',
 		  'blue': '#3275a6',
-		  'coral': '#e7937f',
+		  'dark-blue': '#0a1e32',
+		  'coral': '#f05656',
 		  'transparent': 'transparent',
+		  'black': '#000000',
+		  'light-green': '#42b883',
+		  'green': '#004738',
+		  'purple': '#661fb8',
 		},
 		extend: {
 			gradientColorStopPositions: {
@@ -15,6 +20,14 @@ export default {
 				100: '100%',
 			}
 		},
+		container: {
+			center: true,
+			padding: '1rem',
+		},
+		fontFamily: {
+			'roboto': ['Roboto', 'sans-serif'],
+			'roboto-slab': ['Roboto Slab', 'serif'],
+		}
 	},
 	plugins: [],
 }

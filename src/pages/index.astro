@@ -3,12 +3,39 @@ import Link from '../components/Link.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Scott Harrison | Senior Fullstack Developer">
-	<main class="mx-auto max-w-prose">
-		<h1>Scott Harrison</h1>
-		<h2>Senior Fullstack Developer</h2>
-		<p>Hi there 👋</p>
-		<p>I'm a Senior Fullstack JavaScript Developer with over 12 years of commercial experience.</p>
-		<p>I currently work for <Link url="https://studiorotate.com/">Studio Rotate</Link> building award winning e-commerce websites such as <Link url="https://biggreenegg.co.uk/">BigBreenEgg.co.uk</Link>, <Link url="https://www.rapha.cc/gb/en/">Rapha.cc</Link> and <Link url="https://www.tracksmith.com/gb">Tracksmith.com</Link>.</p>
+<Layout title="Scott Harrison | Senior Fullstack Engineer">
+	<main>
+		<div class="bg-blue text-white py-8 mb-8 md:py-16">
+			<div class="container max-w-prose">
+				<img class="max-w-36 mx-auto rounded-full mb-8 border-4 border-black" src="/portrait.jpg" alt="Portrait image of Scott Harrison smiling" />
+				<p class="text-2xl mb-8">Senior Fullstack JavaScript Engineer with over 12 years of commercial experience.</p>
+				<p class="text-2xl">Currently working at <Link url="https://studiorotate.com/">Studio Rotate</Link> building award winning headless e-commerce experiences such as <Link url="https://biggreenegg.co.uk/" theme="green">BigGreenEgg.co.uk</Link>, <Link url="https://www.rapha.cc/gb/en/" theme="black">Rapha.cc</Link> and <Link url="https://www.tracksmith.com/gb" theme="dark-blue">Tracksmith.com</Link>.</p>
+			</div>
+		</div>
+		<div class="md:flex md:container md:gap-12">
+			<div class="container max-w-prose pb-8">
+				<h2 class="text-2xl mb-2 font-roboto-slab">Tech Stack</h2>
+				<p class="text-lg mb-2">Over my career I've worked with countless languages, frameworks and services. Below you can find the ones which I'm most interested in currently.</p>
+				<ul class="flex flex-wrap gap-x-4 gap-y-2">
+					<li class="inline-flex"><Link url="https://www.typescriptlang.org/" theme="blue">TypeScript</Link></li>
+					<li class="inline-flex"><Link url="https://astro.build/" theme="purple">Astro</Link></li>
+					<li class="inline-flex"><Link url="https://vuejs.org/" theme="light-green">Vue</Link></li>
+					<li class="inline-flex"><Link url="https://react.dev/" theme="blue">React</Link></li>
+					<li class="inline-flex"><Link url="https://nodejs.org/en" theme="light-green">Node</Link></li>
+					<li class="inline-flex"><Link url="https://tailwindcss.com/" theme="blue">Tailwind</Link></li>
+				</ul>
+			</div>
+			<div class="container max-w-prose pb-8">
+				<h2 class="text-2xl mb-2 font-roboto-slab">Reach Out</h2>
+				<p class="text-lg mb-2">Feel free to check out my profiles below, or get in touch.</p>
+				<ul class="flex flex-wrap gap-x-4 gap-y-2">
+					<li class="inline-flex"><Link url="https://github.com/scottHarrisonDev" theme="light-green">GitHub</Link></li>
+					<li class="inline-flex"><Link url="https://www.linkedin.com/in/scott-harrison-60904b93/" theme="blue">LinkedIn</Link></li>
+					<li class="inline-flex"><Link url="https://dev.to/scottharrisondev" theme="black">Dev.to</Link></li>
+					<li class="inline-flex"><Link url="https://www.codewars.com/users/ScottHarrisonDev" theme="coral">Codewars</Link></li>
+					<li class="inline-flex"><Link url="mailto:website-contact@scottharrison.dev" theme="blue">Email</Link></li>
+				</ul>
+			</div>
+		</div>
 	</main>
 </Layout>

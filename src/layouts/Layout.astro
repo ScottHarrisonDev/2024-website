@@ -1,4 +1,5 @@
 ---
+import Logo from '../components/Logo.astro';
 import Nav from '../components/Nav.astro';
 import NavList from '../components/NavList.astro';
 
@@ -10,7 +11,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="bg-white text-dark-grey">
+<html lang="en" class="bg-white text-dark-grey font-roboto">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -21,13 +22,16 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Nav position="static">
-			<NavList />
+			<Logo />
+			<!-- <NavList /> -->
 		</Nav>
 		<slot />
 	</body>
 </html>
 
 <style is:global>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Slab:wght@100..900&display=swap');
+
 .animated-background {
     background-size: 400%;
 
