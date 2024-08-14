@@ -3,7 +3,7 @@ import type { url, linkTheme } from '../types/types';
 
 interface Props {
     url: url
-    theme: linkTheme
+    theme?: linkTheme
 }
 
 const { url, theme = 'default' } = Astro.props;
