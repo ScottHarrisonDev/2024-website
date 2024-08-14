@@ -9,17 +9,17 @@ interface Props {
 const { url, theme = 'default' } = Astro.props;
 
 const classes = [
-    theme === 'default' ? 'bg-coral text-white hover:text-white' : '',
-    theme === 'green' ? 'bg-green text-white hover:text-black' : '',
-    theme === 'black' ? 'bg-black text-white hover:text-black' : '',
-    theme === 'dark-blue' ? 'bg-dark-blue text-white hover:text-black' : '',
-    theme === 'purple' ? 'bg-purple text-white hover:text-black' : '',
-    theme === 'blue' ? 'bg-blue text-white hover:text-black' : '',
-    theme === 'light-green' ? 'bg-light-green text-white hover:text-black' : '',
-    theme === 'coral' ? 'bg-coral text-white hover:text-black' : '',
+    theme === 'default' ? 'bg-coral text-white' : '',
+    theme === 'green' ? 'bg-green text-white' : '',
+    theme === 'black' ? 'bg-black text-white' : '',
+    theme === 'dark-blue' ? 'bg-dark-blue text-white' : '',
+    theme === 'purple' ? 'bg-purple text-white' : '',
+    theme === 'blue' ? 'bg-blue text-white' : '',
+    theme === 'light-green' ? 'bg-light-green text-white' : '',
+    theme === 'coral' ? 'bg-coral text-white' : '',
 ]
 ---
 
-<a href={url} target="_blank" class="font-roboto-slab inline-block px-3 py-1 my-1 rounded" class:list={classes}>
+<a href={url} target="_blank" class="font-roboto-slab inline-block px-3 py-1 my-1 rounded hover:drop-shadow hover:scale-105 transition-all" class:list={classes}>
     <slot />
 </a>
