@@ -13,6 +13,7 @@ export default {
 		  'light-green': '#42b883',
 		  'green': '#004738',
 		  'purple': '#661fb8',
+		  'yellow': '#FF9900',
 		},
 		extend: {
 			gradientColorStopPositions: {
